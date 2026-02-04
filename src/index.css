@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 218 54% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 218 54% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 218 54% 20%;
+
+    --primary: 218 54% 20%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 13% 91%;
+    --secondary-foreground: 218 54% 20%;
+
+    --muted: 220 13% 91%;
+    --muted-foreground: 218 11% 65%;
+
+    --accent: 24 95% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 218 54% 20%;
+
+    /* University themed colors */
+    --lux-blue: 218 54% 20%;
+    --lux-blue-light: 218 54% 85%;
+    --lux-blue-dark: 218 54% 15%;
+    --lux-orange: 24 95% 53%;
+    --lux-gray: 220 13% 91%;
+    --lux-gray-dark: 218 11% 65%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--lux-blue)), hsl(var(--lux-blue-dark)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--lux-orange)), hsl(24 95% 60%));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--lux-gray)));
+
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--lux-blue) / 0.2);
+    --shadow-glow: 0 0 40px hsl(var(--lux-orange) / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 218 54% 4%;
+    --foreground: 0 0% 100%;
+
+    --card: 218 54% 6%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 218 54% 6%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 218 54% 20%;
+
+    --secondary: 218 27% 12%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 218 27% 12%;
+    --muted-foreground: 218 11% 65%;
+
+    --accent: 24 95% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 218 27% 12%;
+    --input: 218 27% 12%;
+    --ring: 0 0% 100%;
+
+    /* Dark mode university colors */
+    --lux-blue: 218 54% 70%;
+    --lux-blue-light: 218 54% 15%;
+    --lux-blue-dark: 218 54% 80%;
+    --lux-orange: 24 95% 53%;
+    --lux-gray: 218 27% 12%;
+    --lux-gray-dark: 218 11% 35%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
